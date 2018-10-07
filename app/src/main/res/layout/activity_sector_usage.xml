@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.SectorUsageActivity">
+    <com.example.ericjeffrey.helloworld.views.SectorProcessView
+        android:id="@+id/spv_sector_usage"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/btn_sector_usage_to_draw"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="click to animate"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress: "
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+        <SeekBar
+            android:id="@+id/sk_bar_sector_usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="TextColor: "
+            tools:ignore="HardcodedText" />
+        <View
+            android:id="@+id/view_sector_usage_pick_text_color"
+            android:background="@android:color/black"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="SectorColor: "
+            tools:ignore="HardcodedText" />
+        <View
+            android:id="@+id/view_sector_usage_pick_sector_color"
+            android:background="@color/colorAzureHalfTran"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="OvalColor: "
+            tools:ignore="HardcodedText" />
+        <View
+            android:id="@+id/view_sector_usage_pick_oval_color"
+            android:background="@color/colorAzure"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:text="TextSize: "
+            tools:ignore="HardcodedText" />
+        <SeekBar
+            android:id="@+id/sk_bar_sector_text_size"
+            android:max="100"
+            android:progress="40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/checkbox_sector_usage_show_text"
+            android:text="show text"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+        <CheckBox
+            android:id="@+id/checkbox_sector_usage_show_oval"
+            android:text="show oval BG"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:text="Duration: "
+            tools:ignore="HardcodedText" />
+        <SeekBar
+            android:id="@+id/sk_bar_sector_duration"
+            android:max="100"
+            android:progress="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
